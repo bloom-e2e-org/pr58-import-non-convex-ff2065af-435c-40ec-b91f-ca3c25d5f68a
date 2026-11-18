@@ -1,0 +1,9 @@
+name: Bloom ready
+on:
+  repository_dispatch:
+    types: [bloom-pull-request-ready]
+jobs:
+  ready:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ready
